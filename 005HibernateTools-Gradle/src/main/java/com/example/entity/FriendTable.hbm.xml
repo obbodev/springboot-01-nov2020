@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 24 Nov, 2020 7:00:05 PM by Hibernate Tools 5.4.18.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="friends_2" dynamic-insert="false" dynamic-update="false" mutable="true" name="com.example.entity.FriendTable" optimistic-lock="version" polymorphism="implicit" schema="dbo" select-before-update="false" table="friend_table">
+        <id name="id" type="int">
+            <column name="id"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="friendLocation" optimistic-lock="true" type="string" unique="false">
+            <column name="friend_location"/>
+        </property>
+        <property generated="never" lazy="false" name="friendName" optimistic-lock="true" type="string" unique="false">
+            <column name="friend_name"/>
+        </property>
+    </class>
+</hibernate-mapping>
